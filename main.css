@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #6B708D;
+    background-color: #E5E5E5;;
+}
+
+/* Nav bar style */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: last baseline;
+    width: 1470px;
+    height: 122px;
+    margin-bottom: 100px;
+}
+
+.imgNav{
+    width: 60.53px;
+}
+
+.ulNav{
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+    width: 295px;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: #6B708D;
+}
+
+
+.btnBlue {
+    background-color: #072AC8;
+    padding: 15px 36px;
+    width: 150px;
+    color:white;
+    border: none;
+}
+
+
+/* Hero section style */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1470px;
+} 
+
+.heroTextDiv{
+    width: 530px;
+    height: 422px;
+
+}
+
+.heroImgDiv{
+    width: 570px;
+    height: 637px;
+}
+
+.heroH1 {
+    width: 530px;
+    height: 210px;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 18px;
+    color: #292E47;
+
+}
+
+.heroP {
+    width: 435px;
+    height: 90px;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 65px;
+
+}
+
+
+.heroImg {
+    position: relative;
+    width: 570px;
+    height: 638px;
+}
+
+.card1 {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    background: none;
+    left: 636px;
+    top: 201px;
+
+}
+
+.card2 {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    background: none;
+    left: 1033px;
+    top: 638px;
+}
+
+
+.heroBtn{
+    width: 150px;
+    height: 52px;
+    margin-right: 40px;
+}
+
+.heroLink {
+    width: 100px;
+    height: 22px;
+
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+
+}
+
+/* Client section style */
+
+.client {
+    
+
+}
