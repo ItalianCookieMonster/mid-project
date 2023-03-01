@@ -52,6 +52,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 1470px;
+    margin-bottom: 130px;
 } 
 
 .heroTextDiv{
@@ -130,6 +131,181 @@ nav {
 /* Client section style */
 
 .client {
-    
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    width: 1470px;
+    height: 96px;
 
+    border: 1px solid #000000;
+
+}
+
+.client > img {
+    filter: grayscale(100%);
+    width: 90px;
+}
+
+/* Project section style */
+.projects{
+    margin: 200px 170px;
+}
+
+.projects > h3 {
+    color: #292E47;
+    font-weight: 700px;
+    font-size: 40px;
+    margin-bottom: 70px;
+
+}
+
+.projectsContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 1100px;
+}
+
+.divProject {
+    width: 340px;
+    background-color: #FFFFFF;
+    height: 444px;
+    
+}
+
+.divProject > h5 {
+    background-color:#FFFFFF;
+    font-size: 24px;
+    color: #292E47;
+    margin-left: 30px;   
+    margin-bottom: 10px; 
+}
+
+.divProject > p {
+    background-color:#FFFFFF;
+    margin-left: 30px;
+    margin-bottom: 54px;
+}
+
+.divProject > a {
+    color: #072AC8;
+    background-color: #FFFFFF;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.projectImg{
+    width: 340px;
+    height: 240px;
+    margin-bottom: 30px;
+}
+
+/* Testimonial section style */
+
+.testimonial{
+    position: relative;
+    margin-right: 65px;
+    margin-left: 65px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-color: #292E47;;
+    background-image: url('/project-assets/testimonial-section/orbit.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonialDiv{
+    background-color: #292E47;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.testimonialDiv > h3 {
+    background-color: #292E47;
+    text-align: center;
+    margin-bottom: 104px;
+
+    color: #F4F6FC;
+    font-size: 40px;
+    font-weight: 700px;
+}
+
+.testimonialDiv > p {
+    background-color: #292E47;
+    text-align: center;
+    margin-bottom: 104px;
+
+    color: #FFC600;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 160%;
+
+}
+
+/* Profile style and positioning */ 
+
+.profile{
+    background-color: #292E47;
+    display: flex;
+    width: 171px;
+    height: 50px;
+    margin-left: 232px;
+}
+
+.profile > img {
+    background-color: #292E47;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+
+.textProfile {
+    background-color: #292E47;
+}
+
+.textProfile > p {
+    background-color: #292E47;
+    margin-bottom: 5px;
+
+    color: #A2D6F9;
+    font-size: 17px;
+
+}
+.textProfile > a {
+    background-color: #292E47;
+
+    color: #F4F6FC;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* Avatar positioning */
+
+.testimonialImg{
+    background-color: #292E47;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+#avatar1 {
+    top: 51px;
+    left: 76px;
+}
+
+#avatar2 {
+    top: 51px;
+    right: 91px;
+}
+
+#avatar3 {
+    left: 63px;
+    bottom: 73px
+}
+
+#avatar4 {
+    right: 73px;
+    bottom: 75px;
 }
