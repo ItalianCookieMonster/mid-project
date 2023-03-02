@@ -165,14 +165,14 @@ nav {
     width: 1100px;
 }
 
-.divProject {
+.projectCard {
     width: 340px;
     background-color: #FFFFFF;
     height: 444px;
     
 }
 
-.divProject > h5 {
+.projectCard > h5 {
     background-color:#FFFFFF;
     font-size: 24px;
     color: #292E47;
@@ -180,13 +180,13 @@ nav {
     margin-bottom: 10px; 
 }
 
-.divProject > p {
+.projectCard > p {
     background-color:#FFFFFF;
     margin-left: 30px;
     margin-bottom: 54px;
 }
 
-.divProject > a {
+.projectCard > a {
     color: #072AC8;
     background-color: #FFFFFF;
     margin-left: 30px;
@@ -207,6 +207,7 @@ nav {
     margin-left: 65px;
     padding-top: 120px;
     padding-bottom: 120px;
+    margin-bottom: 200px;
 
     background-color: #292E47;;
     background-image: url('/project-assets/testimonial-section/orbit.png');
@@ -227,7 +228,6 @@ nav {
 
     color: #F4F6FC;
     font-size: 40px;
-    font-weight: 700px;
 }
 
 .testimonialDiv > p {
@@ -308,4 +308,72 @@ nav {
 #avatar4 {
     right: 73px;
     bottom: 75px;
+}
+
+
+/* Services section style and positioning */
+
+.services {
+    margin: 0 170px 200px 170px;
+}
+
+.services > h3 {
+    color: #292E47;
+    font-size: 40px;
+    margin-bottom: 70px;
+    
+}
+
+.servicesContainer {
+    display:flex;
+    justify-content: space-evenly;
+    gap: 40px
+}
+
+.servicesCard {
+    background-color: #FFFFFF;
+    width: 340px;
+    padding: 0 30px 30px 30px;
+}
+
+.servicesImgContainer {
+    background-color: #ECF7FF;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+
+    width: 80px;
+    height: 80px;
+    margin: 40px 0 30px 30px;  
+}
+
+.servicesImgContainer > img {
+    background: none; 
+    width: 40px;
+    
+}
+
+.servicesCard > h5 {
+    background-color:#FFFFFF;
+
+    color:#292E47;
+    font-size: 24px; 
+
+    margin-bottom: 20px;
+}
+
+.servicesCard > p {
+    background-color: #FFFFFF;
+    margin-bottom: 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.servicesCard > a {
+    background-color: #FFFFFF;
+
+    text-decoration: none;
+    color: #072AC8
 }
