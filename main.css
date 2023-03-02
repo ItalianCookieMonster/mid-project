@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,18 +9,50 @@
     background-color: #E5E5E5;;
 }
 
+a {
+    text-decoration: none;
+    background: none;
+}
+
+.btnBlue {
+    background-color: #072AC8;
+    padding: 15px 36px;
+    width: 150px;
+    color:white;
+    border: none;
+}
+
+h3 {
+    color: #292E47;
+    font-size: 40px;
+}
+
+h5 {
+    color: #292E47;
+    font-size: 24px;
+}
+
+
+p, img, a, input, h5, h3 {
+    background: none;
+}
+
+#contacLi{
+    display: none;
+}
+
 /* Nav bar style */
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: last baseline;
-    width: 1470px;
+    width: 100vw;
     height: 122px;
     margin-bottom: 100px;
 }
 
-.imgNav{
+.logoNav{
     width: 60.53px;
 }
 
@@ -30,19 +63,56 @@ nav {
     width: 295px;
 }
 
-.linkNav {
-    text-decoration: none;
-    color: #6B708D;
+/* Tablet Nav Bar */ 
+@media (max-width: 767px) {
+
 }
 
 
-.btnBlue {
-    background-color: #072AC8;
-    padding: 15px 36px;
-    width: 150px;
-    color:white;
-    border: none;
+
+/* Phone Nav Bar */ 
+@media (max-width: 480px) {
+    #contactBtn{
+        display: none;   
+    }
+
+    #contactLi {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        padding: 20px;
+    }
+
+    .ulNav{
+        display: block;
+        gap: 10px;
+        width: 50%;
+    }
+
+    .linkNav{
+        display: block;
+        padding: 10px;
+    }
+
+    .ulNav:hover {
+        background-color: #FFFFFF;
+    }
+
+    .logoNav {
+        float: right;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+    }
+
+
 }
+
+
+
 
 
 /* Hero section style */
@@ -79,10 +149,8 @@ nav {
 .heroP {
     width: 435px;
     height: 90px;
-    font-size: 20px;
     line-height: 150%;
     margin-bottom: 65px;
-
 }
 
 
@@ -96,7 +164,6 @@ nav {
     position: absolute;
     width: 350px;
     height: auto;
-    background: none;
     left: 636px;
     top: 201px;
 
@@ -106,7 +173,6 @@ nav {
     position: absolute;
     width: 350px;
     height: auto;
-    background: none;
     left: 1033px;
     top: 638px;
 }
@@ -125,7 +191,6 @@ nav {
     font-weight: 500;
     font-size: 17px;
     line-height: 130%;
-
 }
 
 /* Client section style */
@@ -152,9 +217,6 @@ nav {
 }
 
 .projects > h3 {
-    color: #292E47;
-    font-weight: 700px;
-    font-size: 40px;
     margin-bottom: 70px;
 
 }
@@ -173,24 +235,18 @@ nav {
 }
 
 .projectCard > h5 {
-    background-color:#FFFFFF;
-    font-size: 24px;
-    color: #292E47;
     margin-left: 30px;   
     margin-bottom: 10px; 
 }
 
 .projectCard > p {
-    background-color:#FFFFFF;
     margin-left: 30px;
     margin-bottom: 54px;
 }
 
 .projectCard > a {
     color: #072AC8;
-    background-color: #FFFFFF;
     margin-left: 30px;
-    text-decoration: none;
 }
 
 .projectImg{
@@ -222,16 +278,13 @@ nav {
 }
 
 .testimonialDiv > h3 {
-    background-color: #292E47;
     text-align: center;
     margin-bottom: 104px;
 
     color: #F4F6FC;
-    font-size: 40px;
 }
 
 .testimonialDiv > p {
-    background-color: #292E47;
     text-align: center;
     margin-bottom: 104px;
 
@@ -253,7 +306,6 @@ nav {
 }
 
 .profile > img {
-    background-color: #292E47;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -266,7 +318,6 @@ nav {
 }
 
 .textProfile > p {
-    background-color: #292E47;
     margin-bottom: 5px;
 
     color: #A2D6F9;
@@ -274,11 +325,8 @@ nav {
 
 }
 .textProfile > a {
-    background-color: #292E47;
-
     color: #F4F6FC;
     font-size: 13px;
-    text-decoration: none;
 }
 
 /* Avatar positioning */
@@ -318,8 +366,6 @@ nav {
 }
 
 .services > h3 {
-    color: #292E47;
-    font-size: 40px;
     margin-bottom: 70px;
     
 }
@@ -340,7 +386,8 @@ nav {
     background-color: #ECF7FF;
     display: flex;
     align-items: center;
-    padding: 5px;
+    justify-content: center;
+
     border-radius: 50%;
 
     width: 80px;
@@ -349,31 +396,110 @@ nav {
 }
 
 .servicesImgContainer > img {
-    background: none; 
     width: 40px;
-    
 }
 
 .servicesCard > h5 {
-    background-color:#FFFFFF;
-
-    color:#292E47;
-    font-size: 24px; 
-
     margin-bottom: 20px;
 }
 
 .servicesCard > p {
-    background-color: #FFFFFF;
-    margin-bottom: 36px;
-
     font-size: 20px;
+    margin-bottom: 36px;
     line-height: 30px;
 }
 
 .servicesCard > a {
-    background-color: #FFFFFF;
-
-    text-decoration: none;
     color: #072AC8
 }
+
+/* CTA section styiling and positioning */
+
+.cta{
+    background-color: #FFC600;
+    margin: 0 60px 200px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px
+}
+
+.cta > h3 {
+    margin-bottom: 20px;
+}
+
+.cta > p {
+    font-size: 20px;
+    margin-bottom: 50px;
+
+}
+
+.ctaForm {
+    background-color: #FFC600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+.emailContainer {
+    background-color: #F4F6FC;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 393px;
+    height: 80px;
+    
+}
+
+.emailContainer > input  {
+    border: none;
+    font-size: 17px;
+}
+
+.emailContainer > img {
+    width: 30px;
+    margin-left: 30px;
+
+}
+
+.btnForm {
+    width: 190px;
+    height: 80px;
+}
+
+/* Footer section style and positioning */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* Positioning logo and address */
+
+.footerLogoContainer{
+    width: 260px;
+}
+.footerLogoContainer > img{
+    width: 98px;
+    margin-bottom: 30px;
+} 
+.footerLogoContainer > p {
+    font-size: 17px;
+}
+
+/* Positioning links */
+
+.footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 95px;
+
+}
+
+
