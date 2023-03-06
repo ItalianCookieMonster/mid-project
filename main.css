@@ -254,11 +254,11 @@ section {
 
 .hero .textContainer{
     width: 40%;
-    margin-right: 2%;
 }
 
 .hero .textContainer h1{
-    font-size: 63px;
+    /* font-size: 63px; */
+    font-size: 3.79em;
     line-height: 70px;
     margin-bottom: 18px;
     color: #292E47;
@@ -269,7 +269,8 @@ section {
     margin-bottom: 65px;
     width: 74%;
 
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.25em;
     font-weight: 400;
     line-height: 150%;
 }
@@ -279,7 +280,7 @@ section {
 }
 
 .hero .textContainer a {
-    font-size: 17px;
+    font-size: 1,06em;
 }
 
 /* Img Container */
