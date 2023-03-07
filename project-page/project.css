@@ -34,10 +34,6 @@ h3 {
     font-size: 40px;
 }
 
-section {
-    margin-bottom: 200px;
-}
-
 /* Hidddening stuff I need later */
 
 .nav .contactLi{
@@ -84,7 +80,7 @@ section {
     align-items: last baseline;
     width: 100%;
     height: 122px;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
     overflow-x:hidden;
 }
 
@@ -242,6 +238,8 @@ section {
     flex-flow: column wrap;
     align-content: center;
 
+    margin-bottom: 70px;
+
 }
 
 .project h1 {
@@ -254,40 +252,200 @@ section {
 }
 
 .project h5 {
-    display: inline;
-    margin-bottom: 80px;
-    margin-right: 49%;
+    display: inline; 
+    margin-right: 45%;
 
     color: #6B708D;
     font-size: 24px;
     font-weight: 500;
 }
 
-.project p {
+.project .date {
     display: inline;
     color: #292E47;
 }
-.project span {
+
+.project .date span {
     color:#6B708D;
 }
 
-.project .container{
+.project .container1 {
+    margin-bottom: 80px;
+}
+
+.project .container2{
     width: 80%;
 }
 
-.project .container .containerImage {
+.project .container2 .containerImage {
     height: 444px;
     margin-bottom: 70px;
 }
 
-.project .container .containerImage img {
+.project .container2 .containerImage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.project .container p {
+.project .container2 p {
     line-height: 150%;
 
     margin-bottom: 15px;
 }
+
+
+/* Other projects */
+
+.otherProjects{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.otherProjects > h3 {
+    margin-bottom: 70px;
+
+}
+
+.otherProjects .cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%; 
+
+}
+
+.otherProjects .cardsContainer .cards {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 340px;
+    height: 444px;
+    margin-bottom: 10px;
+
+    background-color: #FFFFFF; 
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+}
+
+.otherProjects .cardsContainer .cards > h5, 
+.otherProjects .cardsContainer .cards > p,
+.otherProjects .cardsContainer .cards > a {
+    padding-left: 9%;
+}
+
+.otherProjects .cardsContainer .cards > h5 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px; 
+
+}
+
+.otherProjects .cardsContainer .cards > p {
+    margin-bottom: 54px;
+}
+
+.otherProjects .cardsContainer .cards > a {
+    color: #072AC8;
+
+}
+
+.otherProjects .cardsContainer .cards > img{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 30px;
+}
+
+/* CTA section styling */
+
+.cta{
+    background-color: #FFC600;
+    margin: 0 5% 200px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.cta > h3 {
+    margin-bottom: 20px;
+}
+
+.cta > p {
+    font-size: 20px;
+    margin-bottom: 50px;
+
+}
+
+.cta .form {
+    background-color: #FFC600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.emailContainer {
+    background-color: #F4F6FC;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 393px;
+    height: 80px;
+    
+}
+
+.emailContainer > input  {
+    background-color: #F4F6FC;
+    border: none;
+    font-size: 17px;
+}
+
+.emailContainer > img {
+    width: 30px;
+    margin-left: 30px;
+
+}
+
+.btnForm {
+    width: 190px;
+    height: 80px;
+}
+
+/* Footer styiing */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+/* Positioning logo and address */
+
+.footer .container{
+    width: 260px;
+}
+.footer .container > img{
+    width: 98px;
+    margin-bottom: 30px;
+} 
+.footer .container > p {
+    font-size: 17px;
+}
+
+/* Positioning links */
+
+.footer .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 95px;
+
+}
+
+

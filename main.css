@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -257,8 +258,7 @@ section {
 }
 
 .hero .textContainer h1{
-    /* font-size: 63px; */
-    font-size: 3.79em;
+    font-size: 63px;
     line-height: 70px;
     margin-bottom: 18px;
     color: #292E47;
@@ -269,8 +269,7 @@ section {
     margin-bottom: 65px;
     width: 74%;
 
-    /* font-size: 20px; */
-    font-size: 1.25em;
+    font-size: 20px;
     font-weight: 400;
     line-height: 150%;
 }
@@ -280,7 +279,7 @@ section {
 }
 
 .hero .textContainer a {
-    font-size: 1,06em;
+    font-size: 17px;
 }
 
 /* Img Container */
@@ -312,8 +311,6 @@ section {
     left: 51%;
     top: 66%;
 }
-
-/* Tablet landscape and little desktop Hero section */
 
 
 /* Tablet hero section */
@@ -358,7 +355,9 @@ section {
         width: 100%;
     }
 
-    .hero .imgContainer .image {
+    .hero .imgContainer .image,
+    .hero .imgContainer .card1,
+    .hero .imgContainer .card2 {
         display: none;
     }
 
@@ -366,15 +365,20 @@ section {
         display: none;
     }
 
+    
+
     /* Phone text container */
 
     .hero .textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:absolute;
+        width: 100%;
         background: none;
-        position: absolute;
-        width: 50%;
         text-align: center;
-        left: 10%;
         z-index: 2;
+        padding: 2%;
     }
 
     .hero .textContainer h1 {
@@ -391,9 +395,9 @@ section {
     }
 
     .hero .textContainer button {
-        padding: 5px;
-        width: 70px;
-        font-size: 10px;
+        padding: 7px;
+        width: 25%;
+        font-size: 12px;
         margin-right: 0;
     }
 
@@ -407,7 +411,7 @@ section {
         height: 300px;
     }
 
-    .hero .imgContainer .card1 {
+    /* .hero .imgContainer .card1 {
         width: 53%;
         left: 62%;
         top: 43%;
@@ -417,7 +421,7 @@ section {
         width: 45%;
         left: 57%;
         top: 10%;
-    }
+    } */
 
 
 }
@@ -446,6 +450,7 @@ section {
 @media (max-width: 820px) {
     .client {
         height: 60px;
+        margin-bottom: 50px;
     }
 
     .client > img {
@@ -492,37 +497,39 @@ section {
 
 }
 
-.projects .cardsContainer .cards {
+.projects .cards {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
     width: 340px;
     height: 444px;
-    background-color: #FFFFFF; 
     margin-bottom: 10px;
+
+    background-color: #FFFFFF; 
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 
-.projects .cardsContainer .cards > h5, 
-.projects .cardsContainer .cards > p,
-.projects .cardsContainer .cards > a {
+.projects .cards .content> h5, 
+.projects .cards .content > p,
+.projects .cards  .content > a {
     padding-left: 9%;
 }
 
-.projects .cardsContainer .cards > h5 {
+.projects .cards .content > h5 {
     font-weight: 500;
     margin-bottom: 10px; 
 }
 
-.projects .cardsContainer .cards > p {
+.projects .cards .content> p {
     margin-bottom: 54px;
 }
 
-.projects .cardsContainer .cards > a {
+.projects .cards .content> a {
     color: #072AC8;
 
 }
 
-.projects .cardsContainer .cards > img{
+.projects .cards > img{
     width: 100%;
     height: 240px;
     margin-bottom: 30px;
@@ -536,58 +543,122 @@ section {
         margin-bottom: 40px;
     }
 
-    .projects .cardsContainer .cards {
+    .projects .cards {
         width: 190px;
         height: 244px;
     }
 
-    .projects .cardsContainer .cards > h5{
+    .projects .cards .content > h5{
         font-size: 17px;
         margin-bottom: 7px;
     }
 
-    .projects .cardsContainer .cards > img{
+    .projects .cards .content> img{
         height: 126px;
         margin-bottom: 5px;
     }
 
-    .projects .cardsContainer .cards > p {
+    .projects .cards .content> p {
         font-size: 11px;
         margin-bottom: 30px;
     }
 
-    .projects .cardsContainer .cards > a {
+    .projects .cards .content> a {
         font-size: 10px;
     }
 } 
 
 /* Phone projects sectiona */ 
-/* @media (max-width: 480px) {
-    
-    .projects .cardsContainer {
-        flex-flow: column;
-        width: 60%;
+@media (max-width: 480px) {
+
+    .projects .cardsContainer .cards img {
+        display: none;
+    }
+
+    .projects .cards {
+        display: flex;
+        flex-direction: column wrap;
+        align-items: center;
+        justify-content: center;
         height: auto;
-        gap: 10px;
-        justify-content: space-between;
-    }
-
-    .projects .cardsContainer .cards {
-        display: block;
-        width: 100%; 
-        height: auto;
-    }
-
-    .projects .cardsContainer .cards > h5 {
-        font-size: 15px;
-    }
-
-    .projects .cardsContainer .cards > img{
-        height: 140px;
-    }
-
+        width: 30%;
+        border-radius: 1rem;
+        overflow: hidden;
     
-} */
+        box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+        transition: transform 500ms ease;
+    }
+
+    .projects .cards .content p,
+    .projects .cards .content h5{
+        color:#F4F6FC;
+        padding: 0;
+        margin: 0;
+    }
+
+    .projects .cards .content p {
+        font-size: 13px;
+    }
+
+    .projects .cards .content h5{
+        font-size: 18px;
+        margin-bottom: 20px;
+        margin-left: 2px;
+    }
+    
+    .projects .card1 {
+        background-image: url("/project-assets/projects-section/1.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .projects .card2 {
+        background-image: url("/project-assets/projects-section/2.jpg");
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .projects .card3 {
+        background-image: url("/project-assets/projects-section/3.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .projects .cards .content {
+        background: linear-gradient(
+            hsl(0 0% 0%/ 0),
+            hsl(20 0% 0%/ 0.3) 20%,
+            hsl(0 0% 0% / 1));
+        transform: translateY(60%);
+        transition: transform 500ms ease;
+    }
+    
+    .projects .cards .content a {
+        font-size: 13px;
+        color:#292E47;
+        cursor: pointer;
+        display: inline;
+        background-color: #FFC600;
+        border-radius: 0.25em ;
+    }
+    /* Animating */ 
+    .projects .cards:hover,
+    .projects .cards:focus {
+        transform: scale(1.1);
+    }
+
+    .projects .cards .content a:hover,
+    .projects .cards .content a:focus{
+        background-color:#ECF7FF;
+    }
+
+    .projects .cards:hover .content,
+    .projects .cards:focus .content {
+        transform: translateY(0);
+    }
+
+}
 
 
 
@@ -612,8 +683,8 @@ section {
 
 .testimonial .container {
     background-color: #292E47;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .testimonia .container h3 {
@@ -639,9 +710,8 @@ section {
 .testimonial .container .profile{
     background-color: #292E47;
     display: flex;
-    width: 171px;
+    justify-content: center;
     height: 50px;
-    margin-left: 232px;
 }
 
 .testimonial .container .profile > img {
@@ -678,30 +748,32 @@ section {
 }
 
 #avatar1 {
-    top: 51px;
-    left: 76px;
+    top: 10%;
+    left: 6%;
 }
 
 #avatar2 {
-    top: 51px;
-    right: 91px;
+    top: 10%;
+    right: 6%;
 }
 
 #avatar3 {
-    left: 63px;
-    bottom: 73px
+    left: 6%;
+    bottom: 10%;
 }
 
 #avatar4 {
-    right: 73px;
-    bottom: 75px;
+    right: 6%;
+    bottom: 10%;
 }
 
 
 /* Services section style and positioning */
-
-.services {
-    margin: 0 170px 200px 170px;
+.services{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    width: 100%;
 }
 
 .services > h3 {
@@ -709,59 +781,69 @@ section {
     
 }
 
-.servicesContainer {
-    display:flex;
-    justify-content: space-evenly;
-    gap: 40px
-}
+.services .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%; 
+    gap: 40px;
+} 
 
-.servicesCard {
-    background-color: #FFFFFF;
+.services .card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
     width: 340px;
-    padding: 0 30px 30px 30px;
+    height: 380px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
 
-.servicesImgContainer {
+.services .card .imgContainer {
     background-color: #ECF7FF;
     display: flex;
     align-items: center;
     justify-content: center;
 
     border-radius: 50%;
-
     width: 80px;
     height: 80px;
-    margin: 40px 0 30px 30px;  
-}
 
-.servicesImgContainer > img {
+    margin-bottom: 30px;
+    margin-top: 40px;
+} 
+
+.services .card .imgContainer > img {
     width: 40px;
 }
 
-.servicesCard > h5 {
+.services .card > h5 {
     margin-bottom: 20px;
 }
 
-.servicesCard > p {
+.services .card > p {
     font-size: 20px;
-    margin-bottom: 36px;
     line-height: 30px;
+    margin-bottom: 36px;
 }
 
-.servicesCard > a {
+.services .card > a {
     color: #072AC8
 }
 
-/* CTA section styiling and positioning */
+/* Cta styiling */ 
 
 .cta{
     background-color: #FFC600;
-    margin: 0 60px 200px 60px;
+    margin: 0 5% 200px 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 110px
+    padding: 7%;
 }
 
 .cta > h3 {
@@ -774,12 +856,12 @@ section {
 
 }
 
-.ctaForm {
+.cta .form {
     background-color: #FFC600;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px
+    gap: 20px;
 }
 
 .emailContainer {
@@ -794,6 +876,7 @@ section {
 }
 
 .emailContainer > input  {
+    background-color: #F4F6FC;
     border: none;
     font-size: 17px;
 }
@@ -809,9 +892,9 @@ section {
     height: 80px;
 }
 
-/* Footer section style and positioning */
+/* Footer styiing */
 
-footer{
+.footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -820,20 +903,20 @@ footer{
 
 /* Positioning logo and address */
 
-.footerLogoContainer{
+.footer .container{
     width: 260px;
 }
-.footerLogoContainer > img{
+.footer .container > img{
     width: 98px;
     margin-bottom: 30px;
 } 
-.footerLogoContainer > p {
+.footer .container > p {
     font-size: 17px;
 }
 
 /* Positioning links */
 
-.footerLinks {
+.footer .links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
