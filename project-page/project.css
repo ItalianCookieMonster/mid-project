@@ -8,6 +8,8 @@
 
 body{
     font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
     color: #6B708D;
     background-color: #E5E5E5;
     position: absolute;
@@ -263,10 +265,10 @@ section {
 
 .project p {
     display: inline;
-    
+    color: #292E47;
 }
 .project span {
-    font-size: 20px;
+    color:#6B708D;
 }
 
 .project .container{
@@ -285,8 +287,6 @@ section {
 }
 
 .project .container p {
-    font-weight: 400;
-    font-size: 20px;
     line-height: 150%;
 
     margin-bottom: 15px;
