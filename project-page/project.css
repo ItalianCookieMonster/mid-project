@@ -4,12 +4,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: 'Roboto';
-    font-size: 20px;
-    font-weight: 400;
     color: #6B708D;
     background-color: #E5E5E5;
     position: absolute;
@@ -23,15 +22,25 @@ a {
 
 .btnBlue {
     background-color: #072AC8;
-    padding: 15px 36px;
+    padding: 15px 30px;
     width: 150px;
     color:white;
     border: none;
+    font-size: 17px;
 }
 
 h3 {
     color: #292E47;
     font-size: 40px;
+}
+
+h5 {
+    color: #292E47;
+    font-size: 24px;
+}
+
+section {
+    margin-bottom: 200px;
 }
 
 /* Hidddening stuff I need later */
@@ -68,8 +77,13 @@ h3 {
     }
 }
 
-
-
+/* Genral phone style */ 
+@media (max-width: 480px) {
+    h3 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+}
 
 
 /* Nav bar style */
@@ -80,7 +94,7 @@ h3 {
     align-items: last baseline;
     width: 100%;
     height: 122px;
-    margin-bottom: 140px;
+    margin-bottom: 100px;
     overflow-x:hidden;
 }
 
@@ -125,9 +139,9 @@ h3 {
     }
 
     .nav .logo {
-        width: 80px;
+        width: 90px;
         float: left;
-        padding: 10px 20px; 
+        padding: 20px 20px; 
         
     }
 
@@ -149,7 +163,7 @@ h3 {
 
     .nav .menuIcon {
         background-color: #A2D6F9;
-        padding: 20px 20px;
+        padding: 30px 20px;
         position: relative;
         float: right;
     }
@@ -206,14 +220,10 @@ h3 {
 
 /* Phone Nav Bar */ 
 @media (max-width: 480px) {
-
-    .nav .logo {
-        width: 60px;
-    }
-
     .nav  .menu  a{
     font-size: 17px;
     }
+
      /* Hamburger menu */
 
     .nav .menuIcon .navIcon {
@@ -230,6 +240,7 @@ h3 {
         bottom: 6px;
     }
 }
+
 
 /* Project section styiling */
 

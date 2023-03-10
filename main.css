@@ -22,10 +22,11 @@ a {
 
 .btnBlue {
     background-color: #072AC8;
-    padding: 15px 36px;
+    padding: 15px 30px;
     width: 150px;
     color:white;
     border: none;
+    font-size: 17px;
 }
 
 h3 {
@@ -370,12 +371,11 @@ section {
         width: 90%;
         font-size: 35px;
         line-height: 50px;
-        margin-bottom: 350px;
+        margin-bottom: 100%;
     }
 
     .hero .textContainer p{
         margin-bottom: 30px;
-        margin-top:40px;
         width: 90%;
         font-size: 20px;
     }
@@ -400,7 +400,7 @@ section {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         place-items: center;
-        top: 27%;
+        top: 29%;
         align-self: flex-end;
         margin-top: 0;
         width: 100%;
