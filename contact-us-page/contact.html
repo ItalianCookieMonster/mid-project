@@ -30,27 +30,42 @@
         <h1>Contact Us</h1>
 
         <form>
-            <div class="box box1">
-                <lable for="name">Full Name *</lable>
-                <input type="text" id="name" name="name" placeholder="Enter your full name">
-            </div>
-            <div class="box box2">
-                <lable for="email">Email</lable>
-                <input type="email" id="email" name="email" placeholder="Enter your Email address">
-            </div>
-            <div class="box box3">
-                <lable for="phone">Phone</lable>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-            </div>
-            <div class="box box4">
-                <lable for="message">Message</lable>
-                <textarea id="txt" name="message" placeholder="Write your message here"></textarea>
-            </div>
-            <div class="box box5">
-                <button type="submit" class="btnBlue" id="button">Submit</button>
-            </div>
+                <lable for="name" class="labels box1">
+                    Full Name *
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                </lable>
+                <lable for="email" class="labels box2">Email
+                    <input type="email" id="email" name="email" placeholder="Enter your Email address">
+                </lable> 
+                <lable for="phone" class="labels box3">
+                    Phone
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </lable>
+        
+                <lable for="message" class="labels box4">
+                    Message
+                    <textarea id="txt" name="message" placeholder="Write your message here..."></textarea>
+                </lable>
+                <button type="submit" class="btnBlue box5" id="button">Submit</button>
         </form>
     </section>
-    
+
+
+    <!--Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <img class="imgNav" src="/project-assets/logos/circle.svg" alt="logo Circle">
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+        </div>
+
+        <div class="links">
+            <a href="#">Team</a>
+            <a href="#service">Services</a>
+            <a href="#hero">About us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>  
 </body>
 </html>
