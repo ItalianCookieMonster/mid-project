@@ -9,7 +9,11 @@ window.onload = () => {
         .then (response => response.json())
         .then (response => {
             const [projectToShow] = response.filter(project => project.uuid === projectId )
-            _updateProjectData(projectToShow);
+            _updateProjectData(projectToShow)
+
+        .catch(error => {
+                alert('Project not found', error);
+            });
         })
     }
 
