@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mid term project</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
@@ -17,7 +18,7 @@
             <span class="navIcon"></span>
         </label>
         <ul class="menu">
-            <li><a href="/index.html">Home</a></li>
+            <li><a id="homeLink" href="/index.html">Home</a></li>
             <li><a href="/project-page/project.html">Projects</a></li>
             <li><a href="#service">Service</a></li>
             <li><a class="contactLi" href="contact-us-page/contact.html">Contact Us</a></li>
@@ -30,8 +31,10 @@
         <div class="textContainer">
             <h1>Empower Your Buisness In Stunning Design!</h1>
             <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-            <button onclick="" class="btnBlue">Get in touch</button>
-            <a href="#"> See our work </a>
+            <div class="btnContainer">
+                <a href="/contact-us-page/contact.html" type="button" class="btnBlue" >Get in touch</a>
+                <a href="#projects"> See our work </a>
+            </div>
         </div>
         <div class="imgContainer">   
             <img class="image" src="/project-assets/hero-section/hero-image.png">
@@ -50,7 +53,7 @@
     </section>
 
     <!--Project Section-->
-    <section class="projects">
+    <section class="projects" id="projects">
         <h3>Recent projects</h3>
         <div class="cardsContainer">
             <div class="cards card1">
