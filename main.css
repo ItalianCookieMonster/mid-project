@@ -17,6 +17,7 @@ body{
     background-color: #E5E5E5;
     position: absolute;
     width: 100vw;
+    height: 100%;
 }
 
 a {
@@ -28,9 +29,9 @@ a {
 .btnBlue {
     display: block;
     background-color: #072AC8;
-    padding: 15px 29px;
-    max-height: 52px;
+    padding: 0.75rem 1.45rem;
     color: white;
+    text-align: center;
     border: none;
 }
 
@@ -43,6 +44,7 @@ h1 {
 h3 {
     color: #292E47;
     font-size: 2rem;
+    margin-bottom: 3.5rem;
 }
 
 h5 {
@@ -51,7 +53,7 @@ h5 {
 }
 
 section {
-    margin-bottom: 200px;
+    margin-bottom: 10rem;
 }
 
 /* Hidddening stuff I need later */
@@ -72,7 +74,8 @@ section {
     }
 
     body {
-        padding-top: 80px;
+        padding-top: 15%;
+        width: 100vw;
     }
 
     #contactBtn{
@@ -87,20 +90,12 @@ section {
         display: inline;
     }
 
-    section{
-        margin-bottom: 100px;
-    }
 }
 
 /* Genral phone style */ 
 @media (max-width: 480px) {
     html {
         font-size: 14px;
-    }
-
-    h3 {
-        font-size: 1.78rem;
-        margin-bottom: 30px;
     }
 }
 
@@ -112,13 +107,13 @@ section {
     justify-content: space-around;
     align-items: last baseline;
     width: 100%;
-    height: 122px;
-    margin-bottom: 100px;
+    height: 6.1rem;
+    margin-bottom: 5rem;
     overflow-x:hidden;
 }
 
 .nav .logo{
-    width: 60.53px;
+    width: 3.05rem;
 }
 
 .nav .menu {
@@ -157,17 +152,17 @@ section {
     }
 
     .nav .logo {
-        width: 90px;
+        width: 5.9rem;
         float: left;
-        padding: 20px 20px; 
+        padding: 3%; 
         
     }
 
     .nav .menu a{
         background-color: #A2D6F9 ;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         display: block;
-        padding: 10px 20px;
+        padding: 2% 4%;
 
     }
 
@@ -183,7 +178,7 @@ section {
 
     .nav .menuIcon {
         background-color: #A2D6F9;
-        padding: 30px 20px;
+        padding: 4% 3%;
         position: relative;
         float: right;
     }
@@ -191,7 +186,7 @@ section {
     .nav .menuIcon .navIcon {
         background-color: #6B708D;
         display: block;
-        width: 30px;
+        width: 1.87rem;
         height: 3px;
         position: relative;
         transition: background-color .2s ease-out;
@@ -209,7 +204,7 @@ section {
     }
 
     .nav .menuIcon .navIcon::before{
-        top: 10px;
+        top: 0.625rem;
     }
 
     .nav .menuIcon .navIcon::after{
@@ -241,10 +236,13 @@ section {
 /* Phone Nav Bar */ 
 @media (max-width: 480px) {
      /* Hamburger menu */
+    .nav .menuIcon {
+        padding: 5%;
+    }
 
     .nav .menuIcon .navIcon {
-        width: 19px;
-        height: 2px;
+        width: 1.5rem;
+        height: 2px; 
 
     } 
 
@@ -254,7 +252,7 @@ section {
 
     .nav .menuIcon .navIcon::after{
         bottom: 6px;
-    }
+    } 
 }
 
 /* Footer section styling */
@@ -272,7 +270,7 @@ section {
 }
 .footer .container > img{
     width: 37%;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 } 
 .footer .container > p {
     font-size: 0.85rem;
@@ -283,11 +281,11 @@ section {
 
 .footer .links {
     width: 29%;
-    min-height: 112px;
+    min-height: 5.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 60px;
+    row-gap: 3rem;
 }
 
 /* Tablet footer styling */ 
@@ -313,10 +311,10 @@ section {
     
     /* Positioning logo and address */
     .footer .container{
-        margin: 20px;
+        margin: 1.42rem;
     }
     .footer .container img{
-        width: 60px;
+        width: 4.28rem;
     } 
     .footer .container p {
         width: 493%;
@@ -326,10 +324,10 @@ section {
     /* Positioning links */
     
     .footer .links {
-        margin: 20px;
+        margin: 1.42rem;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 20px;
+        row-gap: 1.42rem;
         column-gap: 60%;
     }
     

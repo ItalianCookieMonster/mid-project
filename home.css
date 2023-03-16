@@ -10,7 +10,7 @@
     align-items: center;
     gap: 2%;
     width: 100%;
-    margin-bottom: 130px;
+    margin-bottom: 6.5rem;
 } 
 
 /* Text container */
@@ -79,14 +79,11 @@
 
     .hero .textContainer h1 {
         width: 75%;
-        margin-bottom: 30px;
-        padding-top: 50px;
+        font-size: 2rem
 
-        font-size: 30px;
-        line-height: 30px;
     }
     .hero .textContainer p{
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     .hero .btnContainer a {
@@ -103,37 +100,30 @@
     .hero {
         flex-direction: column;
         position: relative;
-        margin-bottom: 110px;
-        width: 100%;
     }
+
     /* Phone text container */
 
     .hero .textContainer {
-        position: relative;
         width: 100%;
+        position: relative;
         background: none;
         text-align:left;
         padding: 2%;
     }
 
     .hero .textContainer h1 {
-        width: 90%;
         font-size: 2.5rem;
-        line-height: 115%;
-        margin-bottom: 100%;
+        margin-bottom: 105%;
     }
 
     .hero .textContainer p{
-        margin-bottom: 30px;
-        width: 90%;
         font-size: 1.4rem;
+        width: 100%;
     }
 
-    .hero .textContainer button {
-        align-self: flex-start;
-        padding: 2%;
-        width: 40%;
-        margin-right: 10%;
+    .hero .btnContainer a {
+        margin: 0;
     }
 
 
@@ -141,36 +131,27 @@
 
     .hero .imgContainer {
         position: absolute;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        place-items: center;
-        top: 29%;
-        align-self: flex-end;
-        margin-top: 0;
+        top: 23%;
+        margin: 6%;
         width: 100%;
         height: auto;
     }
 
     .hero .imgContainer .image {
-        order: 2;
-        grid-row: span 2;
-        position:static;
-        width: 120%;
+        width: 70%;
         height: auto;
+        left: 20%;
     }
 
     .hero .imgContainer .card1 {
-        order: 1;
-        position: static;
-        width: 80%;
+        width: 42%;
+        left: 7%;
     }
 
     .hero .imgContainer .card2  {
-        order: 3;
-        position: static;
-        width: 80%;
-
+        width: 40%;
+        left: 55%;
+        top: 70%;
     }
 
 
@@ -184,7 +165,7 @@
     justify-content: space-evenly;
     align-items:center;
     width: 100%;
-    height: 96px;
+    min-height: 4.8rem;
 
     border: 1px solid #000000;
 
@@ -192,35 +173,21 @@
 
 .client > img {
     filter: grayscale(100%);
-    height: 32px;
-    width: 100%;
+    height: auto;
+    width: 5.05rem;
 }
 
 /* Client section tablet */
 @media (max-width: 820px) {
     .client {
-        height: 60px;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
     }
 
     .client > img {
-        height: 20px;
-    }
-
-}
-
-/* Client section phone */ 
-@media (max-width: 480px) {
-    @media (max-width: 820px) {
-        .client {
-            height: 40px;
-        }
-    
-        .client > img {
-            height: 10px;
-        }
+        margin: 5%;
     }
 }
+
 
 /* Project section style */
 .projects{
@@ -228,11 +195,7 @@
     flex-flow: column wrap;
     align-content: center;
     width: 100%;
-}
-
-.projects > h3 {
-    margin-bottom: 70px;
-
+    height: auto;
 }
 
 .projects .cardsContainer{
@@ -248,8 +211,7 @@
     flex-flow: column wrap;
     align-content: center;
     width: 340px;
-    height: 444px;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 
     background-color: #FFFFFF; 
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
@@ -263,11 +225,11 @@
 
 .projects .cards .content > h5 {
     font-weight: 500;
-    margin-bottom: 10px; 
+    margin-bottom: 3%; 
 }
 
 .projects .cards .content> p {
-    margin-bottom: 54px;
+    margin-bottom: 2.7rem;
 }
 
 .projects .cards .content> a {
@@ -277,15 +239,19 @@
 
 .projects .cards > img{
     width: 100%;
-    height: 240px;
-    margin-bottom: 30px;
+    height: 53.5%;
+    margin-bottom: 9%;
 }
 
 /* Tablet project section */
 @media (max-width: 820px) {
+    .projects{
+        height: 40%;
+        margin-bottom: 10%;
+    }
 
-    .projects h3 {
-        margin-bottom: 50px;
+    .projects .cardsContainer {
+        height: 60%;
     }
 
     .projects .cardsContainer .cards img {
@@ -298,7 +264,6 @@
         overflow: hidden;
 
         width: 30%;
-        height: 300px;
     
         box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
         transition: transform 500ms ease;
@@ -312,12 +277,11 @@
     }
 
     .projects .cards .content p {
-        font-size: 13px;
+        font-size: 0.81rem;
         margin-bottom: 3%;
     }
 
     .projects .cards .content h5{
-        font-size: 25px;
         margin-bottom: 5%;
     }
     
@@ -345,7 +309,7 @@
         padding: 0 0 10% 4%;
         background: linear-gradient(
             hsl(0 0% 0%/ 0),
-            hsl(20 0% 0%/ 0.3) 20%,
+            hsl(20 0% 0%/ 0.1) 20%,
             hsl(0 0% 0% / 1));
         transform: translateY(60%);
         transition: transform 500ms ease; 
@@ -354,7 +318,6 @@
     .projects .cards .content a {
         padding: 2%;
         margin-left: 2%;
-        font-size: 13px;
         color:#292E47;
         cursor: pointer;
         background-color: #FFC600;
@@ -362,18 +325,21 @@
     }
     /* Animating */ 
     .projects .cards:hover,
-    .projects .cards:focus {
+    .projects .cards:focus,
+    .projects .cards:active {
         transform: scale(1.5);
         z-index: 3;
     }
 
     .projects .cards .content a:hover,
-    .projects .cards .content a:focus{
+    .projects .cards .content a:focus,
+    .projects .cards .content a:active{
         background-color:#ECF7FF;
     }
 
     .projects .cards:hover .content,
-    .projects .cards:focus .content {
+    .projects .cards:focus .content,
+    .projects .cards:active .content {
         transform: translateY(0);
     }
 
@@ -381,19 +347,28 @@
 
 /* Phone projects sectiona */ 
 @media (max-width: 480px) {
-
-    .projects .cards {
-        width: 70%;
+    .projects {
+        height: auto;
     }
 
-    .projects .cards .content h5{
-        font-size: 25px;
-        margin-bottom: 5%;
+    .projects .cardsContainer {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .cards {
+        width: 90%;
     }
 
     .projects .cards:hover,
-    .projects .cards:focus {
-        transform: scale(1.1);
+    .projects .cards:focus, 
+    .projects .cards:active {
+        transform: scale(1.3);
+    }
+
+    .projects .cards .content h5 {
+        margin-top: 2%;
     }
 }
 
@@ -403,8 +378,8 @@
     position: relative;
     margin-right: 5%;
     margin-left: 5%;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 
     background-color: #292E47;;
     background-image: url('/project-assets/testimonial-section/orbit.png');
@@ -420,17 +395,17 @@
 
 .testimonial .container h3 {
     text-align: center;
-    margin-bottom: 104px;
+    margin-bottom: 5.2rem;
 
     color: #F4F6FC;
 }
 
 .testimonial .container p {
     text-align: center;
-    margin-bottom: 104px;
+    margin-bottom: 16%;
 
     color: #FFC600;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 500;
     line-height: 160%;
 
@@ -442,15 +417,13 @@
     background-color: #292E47;
     display: flex;
     justify-content: center;
-    min-height: 50px;
+    height: 2.5rem;
 }
 
 .testimonial .container .profile > img {
-    width: 50px;
-    height: 50px;
+    width: 2.5rem;
     border-radius: 50%;
-    margin-right: 10px;
-
+    margin-right: 2%;
 }
 
 .testimonial .container .profile .text {
@@ -458,11 +431,9 @@
 }
 
 .testimonial .container .profile .text > p {
-    margin-bottom: 5px;
-
     color: #A2D6F9;
     font-size: 0.85rem;
-
+    margin: 0;
 }
 .testimonial .container .profile .text > a {
     color: #F4F6FC;
@@ -474,8 +445,7 @@
 .testimonial .avatar{
     background-color: #292E47;
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 11.5%;
 }
 
 #avatar1 {
@@ -500,12 +470,6 @@
 
 /* Taablet testimonial section styling */
 @media (max-width: 820px) {
-
-    .testimonial .container h3 {
-        font-size: 1.875rem;
-        font-weight: 500;
-        
-    }
 
     #avatar1, 
     #avatar2,
@@ -576,17 +540,11 @@
     width: 100%;
 }
 
-.services > h3 {
-    margin-bottom: 70px;
-    
-}
-
 .services .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 80%; 
-    gap: 40px;
 } 
 
 .services .card {
@@ -596,7 +554,7 @@
     padding-right: 2%;
     width: 340px;
     height: 380px;
-
+    margin-bottom: 3%;
     background-color: #FFFFFF;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
@@ -611,21 +569,21 @@
     width: 80px;
     height: 80px;
 
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-bottom: 10%;
+    margin-top: 14%;
 } 
 
 .services .card .imgContainer > img {
-    width: 40px;
+    width: 50%;
 }
 
 .services .card > h5 {
-    margin-bottom: 20px;
+    margin-bottom: 6%;
 }
 
 .services .card > p {
-    line-height: 30px;
-    margin-bottom: 36px;
+    line-height: 150%;
+    margin-bottom: 12%;
 }
 
 .services .card > a {
@@ -641,7 +599,6 @@
     .services .container {
         justify-content: space-between;
         width: 80%; 
-        gap: auto;
     } 
 
     .services .card {
@@ -656,29 +613,23 @@
     .services .card .imgContainer {
         width: 50px;
         height: 50px;
-    
-        margin-bottom: 20px;
-        margin-top: 20px;
-    } 
 
-    .services .card .imgContainer > img {
-        width: 50%;
-        height: auto;
-    }
+        margin-top: 5%;
+        margin-bottom: 5%;
+    } 
 
     .services .card > h5 {
         font-size: 1.52rem;
-        margin-bottom: 10px;
+        margin-bottom: 5%;
     }
 
     .services .card > p {
         font-size: 1.25rem;
-        line-height: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 5%;
     }
 
     .services .card > a {
-        margin-bottom: 20px;
+        margin-bottom: 5%;
     }
 
     .services .card:hover,
@@ -695,38 +646,24 @@
     }
 }
 
-
-/* Phone services styiling */ 
-@media (max-width: 480px) {
-
-    .services .card .imgContainer {
-        margin-top: 10px;
-    } 
-
-    .services .card > a {
-        margin-bottom: 10px;
-    }
-
-}
-
 /* Cta styiling */ 
 
 .cta{
     background-color: #FFC600;
-    margin: 0 5% 200px 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 7%;
 }
-
 .cta > h3 {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
-
 .cta > p {
-    margin-bottom: 50px;
+    margin-bottom: 4.5%;
+    color:#292E47;
 }
 
 .cta .form {
@@ -734,53 +671,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    width: 100%;
+    gap: 2%;
 }
 
-.emailContainer {
+.cta .emailContainer {
     background-color: #F4F6FC;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    width: 393px;
-    height: 80px;
+    gap: 2%;
+    width: 36%;
+    height: 4rem;
     
 }
 
-.emailContainer > input  {
+.cta .emailContainer > input  {
     background-color: #F4F6FC;
     border: none;
     font-size: 0.85rem;
+    width: 80%;
 }
 
-.emailContainer > img {
-    width: 30px;
-    margin-left: 30px ;
+.cta .emailContainer > img {
+    width: 9.3%;
+    margin-left: 8% ;
 }
 
-.btnForm {
-    width: 190px;
-    height: 80px;
+.cta .btnForm {
+    width: 18.1%;
+    height: 4rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* CTA tablet styling */
 @media (max-width: 820px) {
-    .cta {
-        margin-bottom: 100px;
+    .cta{
+        text-align: center;
     }
 
-    .cta .form {
-        width: 100%;
-        justify-content: space-between;
-        gap: 0;
-    }
+    .cta .emailContainer {
+        width: 65%;
+    } 
 
-
-    .emailContainer > img {
-        width: 10%;
-        margin-left: 2%;
+    .cta .btnForm {
+        width: 25%;
     }
 
 }
@@ -789,32 +728,20 @@
 
 @media (max-width: 480px) {
     .cta{
-        justify-content: center;
-        align-items: center;
         padding: 7%;
-    }
-    
-    .cta > h3 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .cta > p {
-        margin-bottom: 20px;
+        gap: 10px;
     }
     
     .cta .form {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
-    .emailContainer {
-        width: 90%;
-        height: 40px;
+    .cta .emailContainer {
+        width: 100%;
     }
 
-    .form .btnForm {
+    .cta .btnForm {
         width: 50%;
-        height: 50px
     }
 }

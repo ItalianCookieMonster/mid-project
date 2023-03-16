@@ -6,108 +6,87 @@
     flex-flow: column wrap;
     align-content: center;
 
-    margin-bottom: 70px;
+    margin: 0 10% 5% 10%;
+    width: 80%;
+    
 }
 
 .project h1 {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .project h5 {
-    display: inline; 
-    margin-right: 45%;
-
     color: #6B708D;
     font-weight: 500;
+    line-height: 0;
 }
 
-.project .date {
-    display: inline;
+.project .completed {
+    margin-top: -0.5rem;
+    margin-bottom: 4rem;
+    align-self: flex-end;
     color: #292E47;
 }
 
-.project .date span {
+.project .date {
     color:#6B708D;
 }
 
-.project .container1 {
-    margin-bottom: 80px;
-}
+.project .containerImage {
+    height: 22.2rem;
+    margin-bottom: 6%;
+    position: relative;
+} 
 
-.project .container2{
-    width: 80%;
-}
-
-.project .container2 .containerImage {
-    height: 444px;
-    margin-bottom: 70px;
-}
-
-.project .container2 .containerImage img {
+.project .containerImage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* position: relative;
+    z-index: 1; */
 }
 
-.project .container2 p {
+.project p {
     line-height: 150%;
 
     margin-bottom: 15px;
 }
+/* Colorful shadow */
+/* .project .containerImage::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-image: url('/project-assets/projects-section/1.jpg');
+    background-position: center center;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.50)) blur(20px);
+    z-index: -1;
+} */
+
+/* Tablet project section */
+@media (max-width: 820px) {
+    .project .completed {
+        align-self: flex-start;
+        margin-top: 1.4rem;
+        margin-bottom: 2rem;
+    } 
+}
+
 
 /* Phone project section */
 @media (max-width: 480px) {
 
     .project {
-        margin-left: 2%;
-        width: 100%;
-    
-        margin-bottom: 70px;
+        width: 90%;
+        margin: 5%;
     }
     
     .project h1 {
         font-size: 2.85rem;
-        margin-bottom: 20px;
+        margin-bottom: 1.4rem;
     }
     
-    .project h5 {
-        display: block; 
-        margin-bottom: 20px;
-    }
-    
-    .project .date {
-        display: block;
-        font-size: 1.21rem;
-    }    
-    
-    .project .container1 {
-        margin-bottom: 40px;
-    }
-    
-    .project .container2{
-        height: 20%;
-        width: 80%;
-        margin-right: 2%;
-    }
-    
-    .project .container2 .containerImage {
-        height: 200px;
-        margin-bottom: 70px;
-    }
-    
-    .project .container2 .containerImage img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .project .container2 p {
-        line-height: 150%;
-    
-        margin-bottom: 15px;
-    }
-    
-
 }
 
 /* Other projects section styling */ 
@@ -117,12 +96,7 @@
     flex-flow: column wrap;
     align-content: center;
     width: 100%;
-    margin-bottom: 200px;
-}
-
-.otherProjects > h3 {
-    margin-bottom: 70px;
-
+    height: auto;
 }
 
 .otherProjects .cardsContainer{
@@ -135,11 +109,10 @@
 
 .otherProjects .cards {
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
+    flex-direction: column;
+    /* align-content: center; */
     width: 340px;
-    height: 444px;
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 
     background-color: #FFFFFF; 
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
@@ -153,11 +126,11 @@
 
 .otherProjects .cards .content > h5 {
     font-weight: 500;
-    margin-bottom: 10px; 
+    margin-bottom: 3%; 
 }
 
 .otherProjects .cards .content> p {
-    margin-bottom: 54px;
+    margin-bottom: 2.7rem;
 }
 
 .otherProjects .cards .content> a {
@@ -167,18 +140,20 @@
 
 .otherProjects .cards > img{
     width: 100%;
-    height: 240px;
-    margin-bottom: 30px;
+    height: 53.3%;
+    margin-bottom: 9%;
 }
 
 /* Tablet projects section */
 @media (max-width: 820px) {
 
-    .otherProjects h3 {
-        font-size: 1.87rem;
-        margin-bottom: 50px;
+    .otherProjects {
+        height: 40%;
+        margin-bottom: 10%;
     }
-
+    .otherProjects .cardsContainer{
+        height: 60%;
+    }
     .otherProjects .cardsContainer .cards img {
         display: none;
     }
@@ -189,7 +164,6 @@
         overflow: hidden;
 
         width: 30%;
-        height: 300px;
     
         box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
         transition: transform 500ms ease;
@@ -208,7 +182,6 @@
     }
 
     .otherProjects .cards .content h5{
-        font-size: 1.56rem;
         margin-bottom: 5%;
     }
     
@@ -236,7 +209,7 @@
         padding: 0 0 10% 4%;
         background: linear-gradient(
             hsl(0 0% 0%/ 0),
-            hsl(20 0% 0%/ 0.3) 20%,
+            hsl(20 0% 0%/ 0.1) 20%,
             hsl(0 0% 0% / 1));
         transform: translateY(60%);
         transition: transform 500ms ease; 
@@ -264,7 +237,8 @@
     }
 
     .otherProjects .cards:hover .content,
-    .otherProjects .cards:focus .content {
+    .otherProjects .cards:focus .content,
+    .otherProjects .cards:active .content {
         transform: translateY(0);
     }
 
@@ -272,23 +246,26 @@
 
 /* Phone projects sectiona */ 
 @media (max-width: 480px) {
-
-    .otherProjects{
-        margin-bottom: 80px;
+    .otherProjects {
+        height: auto;
     }
 
+    .therProjects .cardsContainer {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }   
     .otherProjects .cards {
-        width: 70%;
-    }
-
-    .otherProjects .cards .content h5{
-        font-size: 1.78rem;
-        margin-bottom: 5%;
+        width: 90%;
     }
 
     .otherProjects .cards:hover,
     .otherProjects .cards:focus {
-        transform: scale(1.1);
+        transform: scale(1.3);
+    }
+
+    .otherProjects .cards .content h5 {
+        margin-top: 2%;
     }
 }
 
@@ -296,20 +273,20 @@
 
 .cta{
     background-color: #FFC600;
-    margin: 0 5% 200px 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 7%;
 }
-
 .cta > h3 {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
-
 .cta > p {
-    margin-bottom: 50px;
+    margin-bottom: 4.5%;
+    color:#292E47;
 }
 
 .cta .form {
@@ -317,53 +294,55 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    width: 100%;
+    gap: 2%;
 }
 
-.emailContainer {
+.cta .emailContainer {
     background-color: #F4F6FC;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    gap: 10px;
-    width: 393px;
-    height: 80px;
+    gap: 2%;
+    width: 36%;
+    height: 4rem;
     
 }
 
-.emailContainer > input  {
+.cta .emailContainer > input  {
     background-color: #F4F6FC;
     border: none;
     font-size: 0.85rem;
+    width: 80%;
 }
 
-.emailContainer > img {
-    width: 30px;
-    margin-left: 30px ;
+.cta .emailContainer > img {
+    width: 9.3%;
+    margin-left: 8% ;
 }
 
-.btnForm {
-    width: 190px;
-    height: 80px;
+.cta .btnForm {
+    width: 18.1%;
+    height: 4rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* CTA tablet styling */
 @media (max-width: 820px) {
-    .cta {
-        margin-bottom: 100px;
+    .cta{
+        text-align: center;
     }
 
-    .cta .form {
-        width: 100%;
-        justify-content: space-between;
-        gap: 0;
-    }
+    .cta .emailContainer {
+        width: 65%;
+    } 
 
-
-    .emailContainer > img {
-        width: 10%;
-        margin-left: 2%;
+    .cta .btnForm {
+        width: 25%;
     }
 
 }
@@ -372,32 +351,20 @@
 
 @media (max-width: 480px) {
     .cta{
-        justify-content: center;
-        align-items: center;
         padding: 7%;
-    }
-    
-    .cta > h3 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    
-    .cta > p {
-        margin-bottom: 20px;
+        gap: 10px;
     }
     
     .cta .form {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
-    .emailContainer {
-        width: 90%;
-        height: 40px;
+    .cta .emailContainer {
+        width: 100%;
     }
 
-    .form .btnForm {
+    .cta .btnForm {
         width: 50%;
-        height: 50px
     }
 }
