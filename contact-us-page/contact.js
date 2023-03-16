@@ -2,6 +2,18 @@ const SERVER_URL = "http://localhost:8000/contacts";
 
 window.onload = () => {
 
+    function _getEmailFromQueryParam() {
+        const emailQueryParam = new URLSearchParams(window.location.search).get('email');
+        
+        if(emailQueryParam){
+        let input = document.querySelector('#email');
+        input.value = emailQueryParam;
+    }
+    }
+    
+    
+    _getEmailFromQueryParam()
+
     function _handleSubmitButton() {
         const name = document.querySelector('#name').value;
         const email = document.querySelector('#email').value;
@@ -15,7 +27,7 @@ window.onload = () => {
             message
         }
 
-        if(_validateForm(name)){
+        if(_validateForm(name, email)){
             _saveContactData(newContact)
     }
 
@@ -41,7 +53,7 @@ window.onload = () => {
         console.error(error);
         alert('There was an error submitting the form. Please try again later.');
     });
-    }
+}
 
     function _validateForm(name, email) {
         if (name == "") {

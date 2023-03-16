@@ -9,12 +9,12 @@ window.onload = () => {
         .then (response => response.json())
         .then (response => {
             const [projectToShow] = response.filter(project => project.uuid === projectId )
-            _updateProjectData(projectToShow)
+            _updateProjectData(projectToShow) 
+        })
 
         .catch(error => {
                 alert('Project not found', error);
             });
-        })
     }
 
     function _updateProjectData (projectToShow) {
@@ -28,11 +28,23 @@ window.onload = () => {
         date.textContent = projectToShow.completed_on;
 
         const image = document.querySelector('.image');
-        image.textContent = projectToShow.image;
+        image.setAttribute("src", `${projectToShow.image}`);
 
-        const content = document.querySelectorAll('.text');
-        content.textContent = projectToShow.content;
+        _setParaghraps(projectToShow);
 
+
+    }
+
+        function _setParaghraps(projectToShow) {
+            const paragraphs = projectToShow.content.split('<br>');
+            const content = document.querySelector('.text');
+            content.textContent = paragraphs.shift();
+            
+            paragraphs.forEach(paragraph => {
+                const p = document.createElement('p');
+                p.textContent = paragraph;
+                content.insertAdjacentElement('afterend', p);
+            });
     }
 
 
