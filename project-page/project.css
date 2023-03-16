@@ -96,7 +96,6 @@
 .otherProjects .cards {
     display: flex;
     flex-direction: column;
-    /* align-content: center; */
     width: 340px;
     margin-bottom: 3%;
 
