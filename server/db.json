@@ -50,123 +50,53 @@
       "id": 7
     },
     {
-      "name": "",
-      "email": "valentina-toni@live.it",
-      "phone": "dfsdfs",
-      "message": "Hola",
+      "name": "TEST 1",
+      "email": "valentina-toni@something.it",
+      "phone": "487384",
+      "message": "TESTING",
       "id": 8
     },
     {
-      "name": "IBBB",
-      "email": "valentina-toni@live.it",
-      "phone": "dfsdfsg",
-      "message": "Hello",
+      "name": "TEST 1",
+      "email": "valentina-toni@something.it",
+      "phone": "2354748",
+      "message": "TESTING\n",
       "id": 9
     },
     {
-      "name": "Valentina Toni",
-      "email": "v.toni",
-      "phone": "skjalkfn",
-      "message": "asjdnlj",
+      "name": "TEST 2",
+      "email": "valentina-toni@something.it",
+      "phone": "2354748",
+      "message": "JHUGU",
       "id": 10
     },
     {
-      "name": "fjnvgd",
-      "email": "mddgr",
-      "phone": "48636573",
-      "message": "Hello",
+      "name": "TEST 1",
+      "email": "valentina-toni@live.it",
+      "phone": "23456",
+      "message": "TESTING",
       "id": 11
     },
     {
-      "name": "Valentina Toni",
-      "email": "dkfnskl",
-      "phone": "56678787",
-      "message": "sdbaj",
+      "name": "TEST 1",
+      "email": "valentina-toni@live.it",
+      "phone": "487384",
+      "message": "hello",
       "id": 12
     },
     {
-      "name": "sdmsdlk",
-      "email": "v.toni",
-      "phone": "8575785",
-      "message": "djdf",
+      "name": "TEST 1",
+      "email": "valentina-toni@live.it",
+      "phone": "2354748",
+      "message": "heud",
       "id": 13
     },
     {
-      "name": "Valentina Toni",
+      "name": "TEST 1",
       "email": "valentina-toni@live.it",
-      "phone": "834782",
-      "message": "Hwllo",
+      "phone": "2354748",
+      "message": "hello",
       "id": 14
-    },
-    {
-      "name": "Try 1 ",
-      "email": "valentina-toni@live.it",
-      "phone": "1234",
-      "message": "Tr1",
-      "id": 15
-    },
-    {
-      "name": "Try 2",
-      "email": "valentina-toni@live.it",
-      "phone": "23456",
-      "message": "Tr2",
-      "id": 16
-    },
-    {
-      "name": "Try3",
-      "email": "valentina-toni@live.it",
-      "phone": "283746",
-      "message": "Try3",
-      "id": 17
-    },
-    {
-      "name": "Try4",
-      "email": "valentina-toni@live.it",
-      "phone": "987765",
-      "message": "Hola",
-      "id": 18
-    },
-    {
-      "name": "Tey7",
-      "email": "valentina-toni@live.it",
-      "phone": "93847",
-      "message": "Hello",
-      "id": 19
-    },
-    {
-      "name": "Try6",
-      "email": "valentina-toni@live.it",
-      "phone": "0384746",
-      "message": "Hello",
-      "id": 20
-    },
-    {
-      "name": "Try 8",
-      "email": "valentina-toni@live.it",
-      "phone": "98374",
-      "message": "Hello",
-      "id": 21
-    },
-    {
-      "name": "Try 9",
-      "email": "valentina-toni@live.it",
-      "phone": "09374",
-      "message": "TEST",
-      "id": 22
-    },
-    {
-      "name": "TEST 11",
-      "email": "valentina-toni@SOMETHING.COM",
-      "phone": "98W6536",
-      "message": "TEST",
-      "id": 23
-    },
-    {
-      "name": "Valentina",
-      "email": "valentina-toni@lsomething.it",
-      "phone": "374652892",
-      "message": "Hello",
-      "id": 24
     }
   ],
   "projects": []
