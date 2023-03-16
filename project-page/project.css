@@ -137,7 +137,7 @@
         margin-bottom: 10%;
     }
     .otherProjects .cardsContainer{
-        height: 60%;
+        height: 70%;
     }
     .otherProjects .cardsContainer .cards img {
         display: none;
@@ -241,6 +241,7 @@
         align-items: center;
     }   
     .otherProjects .cards {
+        touch-action: manipulation;
         width: 90%;
     }
 

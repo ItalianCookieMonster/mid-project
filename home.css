@@ -251,7 +251,7 @@
     }
 
     .projects .cardsContainer {
-        height: 60%;
+        height: 70%;
     }
 
     .projects .cardsContainer .cards img {
@@ -358,6 +358,7 @@
     }
 
     .projects .cards {
+        touch-action: manipulation;
         width: 90%;
     }
 
@@ -602,6 +603,7 @@
     } 
 
     .services .card {
+        touch-action: manipulation;
         padding-left: 5%;
         padding-right: 5%;
         width: auto;

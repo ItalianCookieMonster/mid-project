@@ -159,6 +159,7 @@ section {
     }
 
     .nav .menu a{
+        touch-action: manipulation;
         background-color: #A2D6F9 ;
         font-size: 1.5rem;
         display: block;
