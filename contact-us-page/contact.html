@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us page</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/contact-us-page/contact.css">
+</head>
+<body>
+    <!--Nav section-->
+    <nav class="nav">
+        <img class="logo" src="/project-assets/logos/circle.svg" alt="logo Circle">
+        <input class="menuBtn" id="menuBtn" type="checkbox">
+        <label for="menuBtn" class="menuIcon">
+            <span class="navIcon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/project-page/project.html/?uuid=1">Projects</a></li>
+            <li><a href="/index.html">Service</a></li>
+            <li><a class="contactLi" href="/contact-us-page/contact.html">Contact Us</a></li>
+
+        </ul>
+        <a href="/contact-us-page/contact.html" type="button" class="btnBlue" id="contactBtn">Contact Us</a>
+    </nav>
+
+    <!--Form section-->
+    <section class="formContainer">
+        <h1>Contact Us</h1>
+
+        <form>
+                <lable for="name" class="labels box1">
+                    Full Name *
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                </lable>
+                <lable for="email" class="labels box2">Email
+                    <input type="email" id="email" name="email" placeholder="Enter your Email address">
+                </lable> 
+                <lable for="phone" class="labels box3">
+                    Phone
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                </lable>
+                <lable for="message" class="labels box4">
+                    Message
+                    <textarea id="txt" name="message" placeholder="Write your message here..."></textarea>
+                </lable>
+                <button type="button" class="btnBlue box5" id="button">Submit</button>
+        </form>
+    </section>
+
+
+    <!--Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <img class="imgNav" src="/project-assets/logos/circle.svg" alt="logo Circle">
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+        </div>
+
+        <div class="links">
+            <a href="#">Team</a>
+            <a href="#service">Services</a>
+            <a href="#hero">About us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>  
+
+    <script type="text/javascript" src="contact.js"></script>
+</body>
+</html>

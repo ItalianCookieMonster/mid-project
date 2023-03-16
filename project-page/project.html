@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project page</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/project-page/project.css">
+</head>
+<body>
+    <!--Nav section-->
+    <nav class="nav">
+        <img class="logo" src="/project-assets/logos/circle.svg" alt="logo Circle">
+        <input class="menuBtn" id="menuBtn" type="checkbox">
+        <label for="menuBtn" class="menuIcon">
+            <span class="navIcon"></span>
+        </label>
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/project-page/project.html?uuid=1">Projects</a></li>
+            <li><a href="/index.html">Service</a></li>
+            <li><a class="contactLi" href="/contact-us-page/contact.html">Contact Us</a></li>
+        </ul>
+        <a href="/contact-us-page/contact.html" type="button" class="btnBlue" id="contactBtn">Contact Us</a>
+    </nav>
+
+    <!-- Project section -->
+    <section class="project">
+        <h1 class="title"></h1>
+        <h5 class="description"></h5>
+        <p class="completed">Completed on: 
+            <span class="date"> </span> 
+        </p>
+        
+        <div class="containerImage">
+            <img src="" alt="project image" class="image">
+        </div>
+        <p class="text"></p>
+    </section>
+
+    <!-- Other projects section -->
+    <section class="otherProjects">
+        <h3>Other projects</h3>
+        <div class="cardsContainer">
+            <div class="cards card1">
+                <img src="/project-assets/projects-section/4.jpg" alt="colorful project image">
+                <div class="content">
+                    <h5>Orbit</h5>
+                    <p>UI Design</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="cards card2">
+                <img src="/project-assets/projects-section/5.jpg" alt="colorful project image">
+                <div class="content">
+                    <h5>Purify</h5>
+                    <p>UI/UX Design</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <div class="cards card3">
+                <img src="/project-assets/projects-section/6.jpg" alt="colorful project image">
+                <div class="content">
+                    <h5>CryptoPie</h5>
+                    <p>App Development</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CTA section-->
+    <section class="cta">
+        <h3>Do you have any questions?</h3>
+        <p>Let us help you!</p>
+        <form class="form">
+            <div class="emailContainer">
+                <img src="/project-assets/newsletter/icon/mail.svg" alt="email icon">
+                <input type="text" placeholder="Enter your email" name="email" id="emailInput">
+            </div>
+            <a class="btnBlue btnForm" type="submit">Subscribe</a>
+        </form>
+    </section>
+
+    <!--Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <img class="imgNav" src="/project-assets/logos/circle.svg" alt="logo Circle">
+            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+        </div>
+
+        <div class="links">
+            <a href="#">Team</a>
+            <a href="#">Services</a>
+            <a href="#">About us</a>
+            <a href="#">Press</a>
+            <a href="#">Projects</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="project.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
+</body>
+</html>
