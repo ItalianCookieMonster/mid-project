@@ -259,6 +259,7 @@
     }
 
     .projects .cards {
+        user-select: none;
         justify-content: flex-end;
         border-radius: 1rem;
         overflow: hidden;
@@ -549,6 +550,7 @@
 } 
 
 .services .card {
+    user-select: none;
     display: flex;
     flex-direction: column;
     padding-left: 2%;
